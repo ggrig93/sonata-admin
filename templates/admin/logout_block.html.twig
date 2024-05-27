@@ -1,0 +1,9 @@
+{% extends '@SonataAdmin/standard_layout.html.twig' %}
+
+{% block sonata_top_nav_menu_user_block %}
+    {{ parent() }}
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path('admin_logout') }}">{{ 'Logout'|trans }}</a>
+    </li>
+{% endblock %}

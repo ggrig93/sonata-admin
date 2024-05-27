@@ -1,0 +1,3 @@
+admin_login:
+  path: /admin/login
+  controller: App\Controller\Admin\LoginController::index

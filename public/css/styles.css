@@ -1,0 +1,45 @@
+/* styles.css */
+
+/* Style for form container */
+form {
+    max-width: 300px; /* Adjust container width as needed */
+    margin: 50px auto; /* Center align and add margin from top */
+    padding: 20px 30px; /* Adjust padding to create equal spacing */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for form inputs */
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 22px); /* Full width - padding and border */
+    padding: 8px;
+    margin-bottom: 10px; /* Add margin between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for submit button */
+form button[type="submit"] {
+    width: calc(100% - 4px); /* Full width - padding and border */
+    padding: 8px;
+    margin-bottom: 10px; /* Add margin between inputs and button */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button */
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
