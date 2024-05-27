@@ -30,9 +30,7 @@ trait ActionLog
         $em = $this->getModelManager()->getEntityManager($this->getClass());
         $originalObject = $em->getUnitOfWork()->getOriginalEntityData($object);
 
-        $operation = 'Entity created';
-
-        $this->userActionLogger->log(get_class($object), $operation, json_encode($originalObject));
+        $this->userActionLogger->log(get_class($object), 'Entity created', json_encode($originalObject));
     }
 
     /**
@@ -46,9 +44,7 @@ trait ActionLog
 
         $changeSet = $unitOfWork->getEntityChangeSet($object);
 
-        $operation = 'Entity updated';
-
-        $this->userActionLogger->log(get_class($object), $operation, json_encode($changeSet));
+        $this->userActionLogger->log(get_class($object), 'Entity updated', json_encode($changeSet));
     }
 
 }
